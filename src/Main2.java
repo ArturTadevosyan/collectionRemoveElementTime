@@ -2,6 +2,7 @@ import service.TestCollectionService;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Random;
 
 public class Main2 {
@@ -47,12 +48,12 @@ public class Main2 {
 
     }
 
-    public static void addElements(ArrayList<Integer> arrayList, LinkedList<Integer> linkedList) {
+    public static void addElements(List<Integer> list1, List<Integer> list2) {
         Random random = new Random();
         for (int i = 0; i < 100000; i++) {
             int number = random.nextInt();
-            arrayList.add(number);
-            linkedList.add(number);
+            list1.add(number);
+            list2.add(number);
         }
     }
 }
