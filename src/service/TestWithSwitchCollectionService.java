@@ -1,10 +1,10 @@
 package service;
 
+import java.util.Collection;
 import java.util.Iterator;
-import java.util.List;
 
 public class TestWithSwitchCollectionService {
-    public static double getByNumberTypeElementsRemovingTime(List<Integer> list, String type) {
+    public static double getByNumberTypeElementsRemovingTime(Collection<Integer> list, String type) {
         Iterator<Integer> iterator = list.iterator();
         long startTime = System.currentTimeMillis();
         while (iterator.hasNext()) {
